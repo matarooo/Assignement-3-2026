@@ -1,0 +1,610 @@
+* {
+font-family: "Exo", sans-serif;
+}
+::selection {
+    background: #8E51FF;
+    color: #fff;
+    text-shadow: none;
+}
+/* =================Start General Styles=================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Exo", sans-serif;
+    color: #333333;
+}
+img {
+    width: 100%;
+}
+.p-fixed {
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+}
+.p-absolute {
+    position: absolute;
+}
+.d-flex {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.g-32 {
+    gap: 32px;
+}
+.container {
+    max-width: 1230px;
+    margin: auto;
+    padding-inline: 24px;
+}
+.list-none {
+    list-style: none;
+    margin: 0;
+}
+.text-2xl {
+    font-size: 48px;
+    font-weight: 600;
+}
+.text-xl {
+    font-size: 36px;
+}
+.text-lg {
+    font-size: 24px;
+}
+.text-20 {
+    font-size: 20px;
+    line-height: 1.625;
+}
+.text-18 {
+    font-size: 18px;
+}
+.text-16 {
+    font-size: 16px;
+}
+.text-sm {
+    font-size: 14px;
+}
+.line-through {
+    text-decoration: line-through;
+}
+.pill {
+    padding: 4px 12px 4px 12px;
+    border-radius: 16px;
+}
+
+/* ================= General Colors =============== */
+.text-black {
+    color: #333333;
+}
+.text-black:hover {
+    color:#7013EA;
+    transition: all ease-in-out .2s;
+}
+.text-white {
+    color: #ffff;
+}
+.text-red {
+    color: #E7000B;
+}
+.text-org {
+    color: #F54900;
+}
+.text-green {
+    color: #00A657;
+}
+.text-green-2 {
+    color: #00C950;
+}
+.text-purple {
+    color: #7013EA;
+}
+.bg-purple-200 {
+    background-color: #F5F3FF;
+}
+.bg-purple-900 {
+    background-color: #8E51FF;
+}
+.bg-purple-400 {
+    background-color: #A684FF;
+}
+.bg-red-200 {
+    background-color: #FFE2E2;
+}
+.bg-transparent {
+    background-color: transparent;
+}
+.bg-purple-300 {
+    background-color: #EDE9FE;
+}
+/* =================End General Styles=================== */
+/* =================Start Navbar Styles=================== */
+.navbar-section {
+    border-bottom: 0.5px solid #ddd6ff;
+}
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px 16px 24px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-weight: 500;
+}
+.selected-link {
+    color:#8E51FF;
+    border-bottom: 2px solid #8E51FF;
+}
+span {
+    font-size: 24px;
+    font-weight: 600;
+}
+.logo {
+    align-items: center;
+}
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    background-color: #8E51FF;
+    border-radius: 8px;
+    color: #ffff;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+/* i learned to do this effect using ::after as it apply the desired hover effect */
+.navbar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #8E51FF;
+    transition: width .2s ease-in;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+/* =================End Navbar Styles=================== */
+/* =================Start Hero SectionStyles=================== */
+.hero-section {
+    box-sizing: border-box;
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
+    padding: 176px 0 96px 0;
+}
+.tags {
+    justify-content: flex-start;
+    gap: 12px;
+}
+.font-w400 {
+    font-weight: 400;
+}
+.hero-img {
+    width: 45%;
+    border-radius: 24px;
+    border: 2px solid #E0E3E7;
+    padding: 20px;
+    position: relative;
+}
+.hero-img img {
+    border-radius: 16px;
+}
+.hero-content {
+    width: 50%;
+}
+.hero-content h1 {
+    margin: 16px 0 16px 0;
+}
+.gap-64 {
+    gap: 64px;
+}
+.pill-img {
+    top: 40px;
+    left: 40px;
+    font-weight: 600;
+}
+.price {
+    align-items: center;
+    gap: 16px;
+}
+.btn {
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 19.5px 32px 19.5px 32px;
+    border-radius: 50px;
+    border: none;
+    width: 100%;
+    font-weight: 600;
+    gap: 12px;
+    transition: 0.2s;
+    margin-bottom: 16px;
+}
+.btn:hover {
+    transform: scale(1.03);
+}
+.btn-outline {
+    border: 2px solid #D1D5DC;
+}
+.content {
+    margin-bottom: 32px;
+}
+/* =================End Hero Section Styles=================== */
+/* =================Start compare Section Styles=================== */
+.details-section {
+    padding: 80px 0 80px 0;
+}
+.heading {
+    text-align: center;
+    margin-bottom: 64px;
+}
+.heading h2 {
+    margin: 0 0 16px 0;
+}
+.heading p {
+    margin: 0;
+}
+.w-full {
+    width: 100%;
+}
+.table {
+    background-color: #ffff;
+    border: 2px solid #D1D5DC;
+    border-radius: 24px;
+    padding: 32px;
+    min-width: 800px;
+}
+.result {
+    display: inline-flex;
+    background-color: #ffff;
+    border: 2px solid #EDEDF4;
+    border-radius: 16px;
+    margin-top: 48px;
+    padding: 16px 32px 16px 32px;
+    align-content: center;
+    text-align: left;
+}
+.top-row {
+    align-items: center;
+}
+.t-pxy {
+    padding: 24px 16px 24px 16px;
+}
+.d-flex-col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.top-rounded {
+    border-radius: 16px 16px 0 0;
+}
+.bot-rounded {
+    border-radius: 0 0 16px 16px;
+}
+.text-center {
+    text-align: center;
+}
+.font-bold {
+    font-weight: 700;
+}
+.font-normal {
+    font-weight: 400;
+}
+.pt-8 {
+    padding-top: 8px;
+}
+.w-2 {
+    width: 28%;
+}
+.w-1{
+    width: 22%;
+}
+.mr-8 {
+    margin-right: 8px;
+}
+.m-0 {
+    margin: 0;
+}
+.p-16 {
+    padding: 16px;
+}
+.border-bottom-2 {
+    border-bottom: 2px solid #E0E3E7;
+}
+.border-bottom-1 {
+    border-bottom: 1px solid #E0E3E7;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.fa-video {
+    color: #00B8DB;
+}
+.fa-camera {
+    color: #00BBA7;
+}
+.fa-battery-full {
+    color: #00C950;
+}
+.fa-satellite-dish {
+    color: #FF6900;
+}
+.fa-gauge-high {
+    color: #FB2C36;
+}
+.fa-shield-halved {
+    color: #00A6F4;
+}
+.fa-scale-balanced {
+    color: #615FFF;
+}
+.fa-cloud-rain {
+    color: #2B7FFF;
+}
+.fa-dollar-sign {
+    color: #F0B100;
+}
+.fa-star , .fa-star-half-stroke {
+    color: #FDC700;
+}
+.gap-4 {
+    gap: 4px;
+}
+.gap-12 {
+    gap: 12px;
+}
+.text-gray {
+    color: #D1D5DC;
+}
+/* =================End compare Section Styles=================== */
+/* =================Start Reviews Section Styles=================== */
+.review-section {
+    box-sizing: border-box;
+    padding: 80px 0 80px 0;
+}
+.right-section {
+    width: 68%;
+}
+.left-section {
+    width: 32%;
+}
+/*======= right section styles ======= */
+.review-card {
+    border: 2px solid #E5E7EB ;
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 24px;
+}
+.gap-48 {
+    gap: 48px;
+}
+.mt-4 {
+    margin-top: 4px;
+}
+.mb-16 {
+    margin-bottom: 16px;
+}
+.pt-32 {
+    padding-top: 32px;
+}
+.leading-relaxed {
+    line-height: 1.625;
+}
+.font-bold-500 {
+    font-weight: 500;
+}
+.text-right {
+    text-align: right;
+}
+.left-side {
+    gap: 16px;
+}
+.left-side img {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    border: 2px solid #A684FF;
+}
+.customer-details {
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.btn-review {
+    background-color: #8E51FF;
+    border: 2px solid #ffff;
+    padding: 16px 32px 16px 32px;
+    border-radius: 28px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btn-review:hover {
+    background-color: transparent;
+    border: 2px solid #8E51FF;
+    color: #8E51FF;
+}
+/*=========== left section styles =========== */
+.left-card {
+    padding: 32px;
+    border: 2px solid #E5E7EB ;
+    border-radius: 16px;
+    position: sticky;
+    top: 90px;
+    bottom: 60px;
+}
+.text-3xl {
+    font-size: 60px;
+}
+.bg-gray-200 {
+    background-color: #E5E7EB;
+}
+.bg-yellow-500 {
+    background-color: #F0B100;
+}
+.h-12 {
+    height: 12px;
+}
+.rounded-lg {
+    border-radius: 24px;
+}
+.flex-1 {
+    flex: 1;
+}
+.border-t {
+    border-top: 1px solid #D1D5DC;
+}
+.pt-24 {
+    padding-top: 24px;
+}
+.mt-32 {
+    margin-top: 32px;
+}
+.justify-space {
+    justify-content: space-evenly;
+}
+.text-left {
+    text-align: left;
+}
+.mr-12 {
+    margin-right: 12px;
+}
+.mb-32 {
+    margin-bottom: 32px;
+}
+/* =================End Reviews Section Styles=================== */
+/* =================Start kits Section Styles=================== */
+.kit-section {
+    box-sizing: border-box;
+    padding: 80px 0 80
+}
+.kit-card {
+    width: 19%;
+    padding: 24px;
+    background-color: #ffff;
+    border: 2px solid #E5E7EB;
+    border-radius: 16px;
+    position: relative;
+}
+.kit-card img {
+    height: 192px;
+    width: 100%;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+.kit-card:hover img  {
+    scale: 1.05;
+}
+.bg-teal-500 {
+    background-color: #00BBA7;
+}
+.bg-green-500 {
+    background-color: #00C950;
+}
+.bg-blue-500 {
+    background-color: #00B8DB;
+}
+.bg-orange-500 {
+    background-color: #FF6900;
+}
+.btn-kit {
+    padding: 8px 16px 8px 16px;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.gap-30 {
+    gap: 30px;
+}
+.btn-outline-pruple {
+    margin-top: 48px;
+    padding: 16px 32px 16px 32px;
+    border:2px solid #7013EA;
+    color: #7013EA;
+    border-radius: 32px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-outline-pruple:hover {
+    margin-top: 48px;
+    padding: 16px 32px 16px 32px;
+    background-color: #7013EA;
+    color: #ffff;
+    border-radius: 32px;
+    cursor: pointer;
+}
+/* =================End kits Section Styles=================== */
+/* =================Start footer Section Styles=================== */
+.footer {
+    background-color: #101828;
+    padding: 64px 0 32px 0;
+}
+.footer-links {
+    width: 25%;
+}
+.social {
+    background-color: #1E2939;
+    color: #ffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.bg-facebook:hover {
+    background-color: #1877f2;
+}
+.bg-twitter:hover {
+    background-color: #1da1f2;
+}
+.bg-instagram:hover {
+    background-color: #E4405F;
+}
+.bg-youtube:hover {
+    background-color: #ff0000;
+}
+.footer-links ul , a{
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.footer-links ul li {
+    margin-bottom: 12px;
+}
+.footer-links ul li a {
+    color: #99A1AF;
+    transition: 0.3s;
+}
+.footer-links ul li a:hover {
+    color: #ffff;
+}
+.footer-links h3 {
+    margin: 0;
+    margin-bottom: 24px;
+    color: #fff;
+}
+.payment-option {
+    padding: 12px;
+    border-radius: 8px;
+}
+.payment-option img {
+    height: 16px;
+}
+.bg-white {
+    background-color: #ffff;
+}
+.footer-bottom {
+    border-top: 0.5px solid #1E2939;
+    padding-top: 32px;
+}
+.mb-48 {
+    margin-bottom: 48px;
+}
