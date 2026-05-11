@@ -1,6 +1,9 @@
 * {
 font-family: "Exo", sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 ::selection {
     background: #8E51FF;
     color: #fff;
